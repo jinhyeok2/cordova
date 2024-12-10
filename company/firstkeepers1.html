@@ -1,0 +1,167 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css"/>
+	<script src="./js/jquery-1.11.1.min.js"></script>
+	<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>퍼스트 키퍼스</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="first_keepers.png" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">회사소개</a></li>
+				<li><a href="#now">사업장 현황</a></li>
+				<li><a href="#wizard3-1" data-rel="dialog">채용공고</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>퍼스트키퍼스</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>회사 소개</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="first_keepers.png">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>회사 연혁</h3>
+					<p>
+						<h2>2023년</h2><br>
+						<ul>
+						12월 01일 퍼스트키퍼스 감사사례집 발간<br>
+						09월 11일 노사발전재단 「재취업지원서비스 기업컨설팅 지원」 협약 체결<br>
+						06월 01일 최남우 3대 대표이사 취임<br>
+						04월 26일 한국폴리텍대학 동부산캠퍼스 인력양성사업 협약 체결<br>
+						03월 01일 한국감사협회 정회원 가입<br>
+						02월 28일 2023년 노사화합 원년의 해 선포(퍼스트키퍼스-노동조합)<br>
+						02월 24일 과학기술인공제회 적립형 공제 급여 사업에 관한 업무협약 체결<br>
+						01월 05일 체육시설업 신고(한빛스포츠센터)<br>
+						01월 01일 노무팀 신설<br></ul><hr>
+						<h2>2022년</h2><br>
+						<ul>
+						12월 09일 한수원-퍼스트키퍼스 경영협약 체결(바람직한 자회사 운영과 모·자회사 간 상생경영)<br>
+						07월 14일 한국전기기술인협회 국가인적자원개발 컨소시엄사업 협약 체결<br>
+						05월 26일 울진 산불 피해 직원 성금 모금 및 전달<br>
+						05월 16일 고려대학교 세종캠퍼스 인력양성사업 협약 체결<br>
+						03월 22일 안전·보건 경영 방침 선포<br>
+						01월 20일 안전보건팀 신설<br></ul><hr>
+						<h2>2021년</h2><br>
+						<ul>
+						12월 22일 안전보건경영시스템(ISO45001) 인증 취득<br>
+						11월 29일 노기경 2대 대표이사 취임<br>
+						04월 26일 원전 재료분석 엔지니어링 사업자 신고(한국엔지니어링협회) 및 엔지니어링 공제조합 가입<br>
+						04월 01일 하수처리, 발전지원, 재료분석 신규직종 인력전환 완료<br>
+						03월 15일 개인하수처리시설관리업 등록(경주시)<br>
+						03월 05일 하수처리업 정관 목적사업 추가<br></ul><hr>
+						<h2>2020년</h2><br>
+						<ul>
+						11월 10일 한국폴리텍대학 강릉캠퍼스 인력양성사업 협약 체결<br>
+						07월 23일 원전현장인력양성원 산학협력 업무협약 체결<br>
+						07월 17일 한국폴리텍대학 포항캠퍼스 인력양성사업 협약 체결<br>
+						05월 18일 체육시설업 신고(고리스포츠센터)<br>
+						01월 08일 ERP(전사적 자원관리)시스템 도입<br></ul><hr>
+						<h2>2019년</h2><br>
+						<ul>
+						12월 16일 체육시설업 신고(한울스포츠센터)<br>
+						12월 09일 그룹웨어 도입<br>
+						12월 02일 퍼스트키퍼스㈜ 사업개시<br>
+						11월 27일 체육시설업 신고(월성·푸르뫼스포츠센터)<br>
+						11월 27일 손태경 대표이사 취임<br>
+						11월 01일 건물위생관리업 신고<br>
+						06월 20일 퍼스트키퍼스㈜ 설립등기</p></ul><hr>
+				</div>
+				<div data-role="collapsible">
+					<h3>안전경영</h3>
+					<p><h2>안전·보건 경영방침</h2></p>
+					퍼스트키퍼스㈜는 산업재해를 예방하고 근로자의 안전과 건강을 확보하기 위해 최선을 다하며 고객중심·상호신뢰·정도경영의 핵심가치를 만든다.
+					</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>핵심가치</h3>
+					<p>고객 중심: 모든 경영활동의 중심에 고객을 최우선으로 한다.</p><br>
+					<p>상호 신뢰: 노사 및 고객과의 신뢰를 바탕으로 고객만족을 이룬다.</p><br>
+					<p>정도 경영: 청렴과 정도경영을 통하여 사회적 책임을 준수하며 고객가치를 중대한다.</p><br>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1></h1>
+		</div>		
+	</div>
+	</div>
+	
+	<div data-role="page" id="now"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>사업장 현황</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="gori.jpg">
+				</div>			
+		<div data-role="footer" data-position="fixed" data-theme="b">
+		</div>		
+	</div>
+	</div>
+
+	
+	<div data-role="page" id="wizard3-1">
+		<div data-role="header">
+			<h1>채용 공고</h1>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true">
+				<li><a>[마감] 퍼스트키퍼스(주) 2025년 1차 채용 공고</a></li>
+				<li><a>[마감] 퍼스트키퍼스(주) 2024년 5차 채용 공고</a></li>
+				<li><a>[마감] 퍼스트키퍼스(주) 2024년 4차 채용 공고</a></li>
+				<li><a>[마감] 퍼스트키퍼스(주) 개방형 직위(사업소장) 채용 공고</a></li>
+				<li><a>[마감] 퍼스트키퍼스(주) 개방형직위(경영관리실장/사업소장) 채용 공고</a></li>
+				<li><a>[마감] 퍼스트키퍼스(주) 2024년 3차 채용(수시) 공고</a></li>
+				<li><a>[마감] 퍼스트키퍼스(주) 2024년 2차 채용 공고</a></li>
+				<li><a>[마감] 퍼스트키퍼스(주) 2024년 1차 채용(수시) 공고</a></li>
+			</ul>
+		</div>
+		<div data-role="footer">
+			<a href="#wizard3-2"  data-direction="reverse">이전</a>
+			<a href="#wizard3-2" data-rel="dialog" data-transition="slide">다음</a>
+		</div>
+	</div>
+
+	<div data-role="page" id="wizard3-2">
+		<div data-role="header">
+			<h1>채용 공고 결과</h1>
+		</div>
+		<div data-role="content">
+			<ul data-role="listview" data-inset="true">
+				<li><a>채용결과 공고 관련 공지</a></li>
+			</ul>
+		<div data-role="footer">
+			<a href="#wizard3-1"  data-direction="reverse">이전</a>
+			<a href="#wizard3-1" data-rel="dialog" data-transition="slide">다음</a>
+		</div>	
+	</div>
+</div>	
+</body>
+</html>
